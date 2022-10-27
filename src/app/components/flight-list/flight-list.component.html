@@ -1,0 +1,27 @@
+<div class="container" *ngIf="flights">
+    <div class="row">
+        <div class="col-12">
+            <p>Flights</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <table >
+                <thead>
+                    <tr>
+                        <th>Flight number</th>
+                        <th>Status</th>
+                        <th>Duration</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let flight of flights">
+                        <td>{{flight.flight_number}}</td>
+                        <td>{{flight.status}}</td>
+                        <td>{{flight.duration * 60}}s</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  SCEDULE_API_URL: 'https://airlabs.co/api/v9/schedules?dep_icao=LHBP&arr_icao=OMDB&api_key=15f49df2-9353-465f-9fc0-c6bba6ae54c0'
 };
 
 /*
